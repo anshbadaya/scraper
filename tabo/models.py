@@ -8,8 +8,8 @@ class Processed(models.Model):
 
     class Meta:
         db_table = "processed"
-        verbose_name = "Tabo Historical Data"
-        verbose_name_plural = "Tabo Historical Data"
+        verbose_name = "Tabo Tomorrow.io Data"
+        verbose_name_plural = "Tabo Tomorrow.io Data"
 
     def __str__(self):
         return str(self.time)
@@ -21,8 +21,8 @@ class Scraped(models.Model):
 
     class Meta:
         db_table = "scraped_data"
-        verbose_name = "Tabo Minutes Data"
-        verbose_name_plural = "Tabo Minutes Data"
+        verbose_name = "Tabo Scraped Data"
+        verbose_name_plural = "Tabo Scraped Data"
 
     def __str__(self):
         return str(self.time)
